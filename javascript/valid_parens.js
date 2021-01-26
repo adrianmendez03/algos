@@ -31,6 +31,8 @@ const validParens = str => {
   return true
 }
 
+// ONLY WORKS WHEN INPUT IS SYMMETRICAL
+
 // const validParens = str => {
 //     if (str.length % 2 !== 0) {
 //       return false
