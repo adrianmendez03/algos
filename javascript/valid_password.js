@@ -17,7 +17,7 @@ const validate = (password) => {
                 upper = true;
                 break;
             default:
-            break;
+                break;
         }
     }
     return upper && lower && num; 
