@@ -20,3 +20,18 @@ class Solution {
         return found ? left : -1
     }
 }
+
+class Solution {
+    solve(matrix) {
+        let ans = -1, row = 0, col = matrix[0] ? matrix[0].length - 1 : 0
+        while (row < matrix.length && col >= 0) {
+            if (matrix[row][col] == 1) {
+                ans = col
+                col--
+            } else {
+                row++
+            }
+        }
+        return ans
+    }
+}
